@@ -1,0 +1,19 @@
+{
+  "name": "graph_rogue",
+  "version": "0.0.0",
+  "authors": [
+    "ryuma.tsukano <lyumalyuma@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {},
+  "dependencies": {
+    "bootstrap": "~3.2.0"
+  }
+}

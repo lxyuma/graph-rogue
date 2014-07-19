@@ -1,0 +1,27 @@
+{
+  "name": "graph_rogue",
+  "version": "0.0.0",
+  "description": "",
+  "main": "driller.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "coffee-script": "^1.7.1",
+    "gulp": "^3.8.6",
+    "gulp-bower-files": "^0.2.7",
+    "gulp-concat": "^2.3.3",
+    "gulp-connect": "^2.0.6",
+    "gulp-jshint": "^1.7.1",
+    "gulp-load-plugins": "^0.5.3",
+    "gulp-open": "^0.2.8",
+    "gulp-uglify": "^0.3.1",
+    "karma": "^0.12.17",
+    "karma-chrome-launcher": "^0.1.4",
+    "karma-jasmine": "^0.2.2",
+    "main-bower-files": "^1.0.1"
+  },
+  "dependencies": {}
+}
