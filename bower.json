@@ -16,5 +16,10 @@
   "dependencies": {
     "bootstrap": "~3.2.0",
     "sigma": "~1.0.2"
+  },
+  "overrides": {
+    "sigma": {
+      "main": [ "build/sigma.min.js" , "build/plugins/sigma.parsers.json.min.js"]
+    }
   }
 }

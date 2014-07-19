@@ -30,6 +30,7 @@ gulp.task 'scripts', ['hint'], ->
     .pipe(pl.uglify())
     .pipe(pl.concat(projectName + ".js"))
     .pipe(gulp.dest(dist.dirJs))
+    .pipe(pl.connect.reload())
 
 gulp.task 'bower', ->
   gulp.src(mainBowerFiles())
@@ -37,19 +38,18 @@ gulp.task 'bower', ->
 
 gulp.task 'styles', ->
   gulp.src(src.styles)
-    .pipe(pl.compass(
-      project: path.join(__dirname, src.dirStyles)))
+    .pipe(pl.compass(project: path.join(__dirname, src.dirStyles)))
     .pipe(pl.csso())
     .pipe(pl.concatCss(projectName + ".css"))
     .pipe(gulp.dest(dist.dirCss))
+    .pipe(pl.connect.reload())
 
 gulp.task 'html', ->
   gulp.src(src.html)
     .pipe(gulp.dest(dist.dir))
-
-gulp.task 'build', ['scripts', 'bower', 'styles', 'html'], ->
-  gulp.src("")
     .pipe(pl.connect.reload())
+
+gulp.task 'build', ['scripts', 'bower', 'styles', 'html']
 
 # server
 gulp.task 'connect', ["build"], ->
