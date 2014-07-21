@@ -1,6 +1,12 @@
 /* line 1, ../sass/test.scss */
+body {
+  background-color: #ccc;
+}
+
+/* line 4, ../sass/test.scss */
 .rogue-main {
+  background-color: #fff;
   max-width: 1024px;
-  height: 728px;
+  height: 768px;
   margin: auto;
 }
